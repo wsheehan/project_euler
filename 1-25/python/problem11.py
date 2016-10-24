@@ -35,7 +35,7 @@ def get_digit (i,j):
 for i in range(0,20):
 	for j in range(0,20):
 		lead = int(grid[i][j])
-		prod = [lead*get_digit(i,j+1)*get_digit(i,j+2)*get_digit(i,j+3), lead*get_digit(i+1,j)*get_digit(i+2,j)*get_digit(i+3,j), lead*get_digit(i+1,j+1)*get_digit(i+2,j+2)*get_digit(i+3,j+3)]
+		prod = [lead*get_digit(i,j+1)*get_digit(i,j+2)*get_digit(i,j+3), lead*get_digit(i+1,j)*get_digit(i+2,j)*get_digit(i+3,j), lead*get_digit(i+1,j+1)*get_digit(i+2,j+2)*get_digit(i+3,j+3), lead*get_digit(i-1,j+1)*get_digit(i-2,j+2)*get_digit(i-3,j+2)]
 		if max(prod) > max_prod:
 			max_prod = max(prod)
 
